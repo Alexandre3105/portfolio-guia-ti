@@ -1,4 +1,4 @@
-# Prototipar uma lição interativa de redes
+# Prototipar uma Missão de Suporte interativa
 
 Type: prototype
 Status: open
@@ -6,4 +6,4 @@ Blocked by: 08, 11
 
 ## Question
 
-Que protótipo mínimo permite avaliar se uma explicação simples de redes, seguida de exercício e feedback, é clara e útil para uma pessoa iniciante?
+Que protótipo mínimo de uma Missão de Suporte permite avaliar com iniciantes a estrutura, os Caminhos de Investigação, a Barreira de Segurança, o Feedback Acionável, o Caso de Transferência e o Registro de Atendimento?

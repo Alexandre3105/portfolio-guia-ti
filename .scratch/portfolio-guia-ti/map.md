@@ -23,6 +23,7 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 - [Pesquisar ensino e acessibilidade para iniciantes](issues/07-pesquisar-ensino-e-acessibilidade.md) — lições devem combinar linguagem simples, apoio gradual, recuperação, feedback acionável e WCAG 2.2 AA, com validação pelo público real.
 - [Reunir currículo, LinkedIn e experiências autorais](issues/04-reunir-materia-prima-autoral.md) — as fontes foram consolidadas em um inventário sanitizado que separa autodeclaração, evidência pública e pontos que exigem confirmação.
 - [Definir competências da Formação Inicial de Suporte de TI](issues/05-definir-competencias-da-trilha-redes.md) — a formação parte do uso básico de computador e desenvolve autonomia progressiva para diagnosticar, resolver com segurança ou escalar com evidências.
+- [Definir formato de lições, exercícios e feedback](issues/08-definir-formato-de-licoes-exercicios-e-feedback.md) — cada lição será uma Missão de Suporte curta e acessível, com investigação por caminhos seguros, ajuda progressiva, transferência e feedback acionável.
 
 ## Not yet specified
 
@@ -34,4 +35,4 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 - Traduzir o MVP para inglês.
 - Incluir procedimentos internos, credenciais ou dados confidenciais de empresas.
 - Criar área interna de empresa, certificados, comunidade ou recursos sociais.
-- Produzir todas as trilhas futuras antes de validar **Redes para Suporte**.
+- Produzir especializações avançadas ou procedimentos de fabricantes antes de validar a **Formação Inicial de Suporte de TI**.

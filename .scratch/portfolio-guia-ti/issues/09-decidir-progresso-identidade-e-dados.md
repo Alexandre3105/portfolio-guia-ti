@@ -6,4 +6,4 @@ Blocked by: 08
 
 ## Question
 
-Que progresso precisa ser registrado no MVP, se o aluno precisa de identidade e quais dados podem ser armazenados sem criar complexidade ou risco desnecessário?
+Como representar conteúdo percorrido, Competência demonstrada, missões, Registros de Atendimento e Nível de Apoio, se o aluno precisa de identidade e quais dados podem ser armazenados sem criar complexidade, competição ou risco desnecessário?
