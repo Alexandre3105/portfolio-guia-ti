@@ -75,3 +75,43 @@ _Avoid_: Página longa, etapa com vários objetivos simultâneos
 **Aprofundamento Opcional**:
 Material complementar consultado por escolha do aluno para ampliar uma explicação, sem conter informação indispensável à compreensão ou conclusão da atividade.
 _Avoid_: Pré-requisito escondido, conteúdo essencial somente em vídeo ou link externo
+
+**Conta do Aluno**:
+Identidade privada usada pelo próprio aluno para salvar, sincronizar, consultar e excluir sua jornada de aprendizagem entre dispositivos, sem permitir supervisão empresarial no MVP.
+_Avoid_: Perfil público, conta de funcionário, painel de gestor
+
+**Autenticação Gerenciada**:
+Identificação da Conta do Aluno delegada a um serviço especializado, enquanto o produto mantém sob seu controle os dados da jornada de aprendizagem.
+_Avoid_: Sistema próprio de senhas, múltiplos provedores integrados sem necessidade
+
+**Estado de Aprendizagem**:
+Conjunto mínimo de progresso e resultados finais associado à Conta do Aluno para permitir retomada e demonstrar evolução, sem registrar cada interação realizada.
+_Avoid_: Histórico de cliques, rastreamento comportamental completo
+
+**Missão Percorrida**:
+Estado que indica que o aluno passou pelos blocos e pelo debriefing de uma Missão de Suporte, sem afirmar que a competência relacionada foi demonstrada.
+_Avoid_: Competência concluída, domínio comprovado
+
+**Competência Demonstrada**:
+Estado sustentado por um Caso de Transferência no qual o aluno atende aos critérios de segurança, evidência, condução e comunicação definidos para a competência.
+_Avoid_: Página visitada, conteúdo percorrido, certificado definitivo
+
+**Conclusão da Formação**:
+Estado alcançado quando todas as competências obrigatórias e o desafio final da Formação Inicial de Suporte de TI foram demonstrados com segurança.
+_Avoid_: Todas as páginas visitadas, porcentagem completa sem evidência
+
+**Portabilidade da Jornada**:
+Capacidade do aluno de obter seu Estado de Aprendizagem e seus Registros de Atendimento em formato legível e reutilizável fora do produto.
+_Avoid_: Exportação proprietária ilegível, aprisionamento dos dados
+
+**Métrica Pedagógica**:
+Sinal opcional e desvinculado da identidade usado para avaliar clareza e continuidade das missões, sem incluir respostas, registros ou conteúdo digitado pelo aluno.
+_Avoid_: Vigilância do aluno, gravação de sessão, perfil comportamental
+
+**Dado de Cenário**:
+Informação fictícia e sanitizada fornecida pela própria Missão de Suporte para permitir investigação e documentação sem utilizar dados reais de pessoas, clientes ou empresas.
+_Avoid_: Dado de produção, credencial, arquivo real de atendimento
+
+**Prévia Pública**:
+Apresentação aberta da formação com um Microdesafio demonstrativo, sem progresso persistido, disponível antes da criação da Conta do Aluno.
+_Avoid_: Missão completa anônima, cadastro antes de conhecer a proposta

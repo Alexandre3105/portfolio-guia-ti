@@ -6,4 +6,4 @@ Blocked by: 08, 09, 10
 
 ## Question
 
-Qual arquitetura de informação deixa claro, desde a entrada, como acessar o portfólio e como iniciar ou retomar o treinamento sem misturar os dois objetivos?
+Qual arquitetura de informação deixa claro, desde a entrada, como acessar o portfólio, experimentar a Prévia Pública e criar ou acessar a Conta do Aluno para iniciar ou retomar a formação sem misturar os dois objetivos?

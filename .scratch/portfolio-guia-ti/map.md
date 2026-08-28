@@ -24,6 +24,7 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 - [Reunir currículo, LinkedIn e experiências autorais](issues/04-reunir-materia-prima-autoral.md) — as fontes foram consolidadas em um inventário sanitizado que separa autodeclaração, evidência pública e pontos que exigem confirmação.
 - [Definir competências da Formação Inicial de Suporte de TI](issues/05-definir-competencias-da-trilha-redes.md) — a formação parte do uso básico de computador e desenvolve autonomia progressiva para diagnosticar, resolver com segurança ou escalar com evidências.
 - [Definir formato de lições, exercícios e feedback](issues/08-definir-formato-de-licoes-exercicios-e-feedback.md) — cada lição será uma Missão de Suporte curta e acessível, com investigação por caminhos seguros, ajuda progressiva, transferência e feedback acionável.
+- [Decidir progresso, identidade e dados do aluno](issues/09-decidir-progresso-identidade-e-dados.md) — a formação terá Conta do Aluno 18+, progresso multidimensional e dados mínimos sob controle do titular, com autenticação gerenciada sem custo previsto no MVP.
 
 ## Not yet specified
 
@@ -34,5 +35,5 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 - Implementar ou publicar o site durante o Wayfinder.
 - Traduzir o MVP para inglês.
 - Incluir procedimentos internos, credenciais ou dados confidenciais de empresas.
-- Criar área interna de empresa, certificados, comunidade ou recursos sociais.
+- Criar área interna de empresa, visualizar respostas individuais na administração, emitir certificados, formar comunidade ou oferecer recursos sociais.
 - Produzir especializações avançadas ou procedimentos de fabricantes antes de validar a **Formação Inicial de Suporte de TI**.
