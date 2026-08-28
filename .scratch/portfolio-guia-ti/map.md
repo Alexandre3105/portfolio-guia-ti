@@ -25,6 +25,7 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 - [Definir competências da Formação Inicial de Suporte de TI](issues/05-definir-competencias-da-trilha-redes.md) — a formação parte do uso básico de computador e desenvolve autonomia progressiva para diagnosticar, resolver com segurança ou escalar com evidências.
 - [Definir formato de lições, exercícios e feedback](issues/08-definir-formato-de-licoes-exercicios-e-feedback.md) — cada lição será uma Missão de Suporte curta e acessível, com investigação por caminhos seguros, ajuda progressiva, transferência e feedback acionável.
 - [Decidir progresso, identidade e dados do aluno](issues/09-decidir-progresso-identidade-e-dados.md) — a formação terá Conta do Aluno 18+, progresso multidimensional e dados mínimos sob controle do titular, com autenticação gerenciada sem custo previsto no MVP.
+- [Definir narrativa e conteúdo do portfólio](issues/10-definir-narrativa-do-portfolio.md) — o portfólio prioriza projetos freelancer, sustenta sua oferta com quatro casos delimitados e separa os caminhos de contato, formação e recrutamento.
 
 ## Not yet specified
 

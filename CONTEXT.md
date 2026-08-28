@@ -115,3 +115,39 @@ _Avoid_: Dado de produção, credencial, arquivo real de atendimento
 **Prévia Pública**:
 Apresentação aberta da formação com um Microdesafio demonstrativo, sem progresso persistido, disponível antes da criação da Conta do Aluno.
 _Avoid_: Missão completa anônima, cadastro antes de conhecer a proposta
+
+**Explorar a Formação**:
+CTA secundário do portfólio que conduz à Prévia Pública da formação, preservando o CTA comercial como ação principal.
+_Avoid_: Exigir login no primeiro contato, competir visualmente com o CTA principal, prometer certificação
+
+**Promessa Profissional**:
+Mensagem central do portfólio: transformar problemas técnicos em soluções compreensíveis, seguras e documentadas, conectando suporte, implantação, ensino e desenvolvimento.
+_Avoid_: Nome como abertura, lista de ferramentas, título profissional inflado
+
+**Posicionamento Profissional**:
+Síntese da atuação apresentada como “Soluções digitais para operações, dados e aprendizagem”, conectando as frentes do portfólio sem reduzi-las a um cargo.
+_Avoid_: Cargo inflado, lista de tecnologias, posicionamento genérico sem evidências
+
+**Oferta Freelancer**:
+Proposta comercial organizada em duas frentes: soluções para operações por meio de ferramentas, automações, documentação e treinamento; e dados para decisões por meio de dashboards, estatística aplicada e protótipos analíticos.
+_Avoid_: Lista desconexa de tecnologias, promessa de solução crítica sem evidência
+
+**Contato de Projeto**:
+Conversa comercial iniciada pelo CTA “Conte seu problema”, usada para compreender contexto e necessidade antes de definir solução, escopo, prazo ou preço; no MVP, é encaminhada ao WhatsApp sem persistência dos dados pelo site.
+_Avoid_: Orçamento automático sem descoberta, promessa antecipada, formulário longo, número pessoal publicado sem revisão
+
+**Caso de Projeto**:
+Evidência profissional estruturada por problema, participação, solução, resultado e limites de publicação, permitindo compreender o valor entregue sem expor informação confidencial.
+_Avoid_: Galeria de telas, lista de ferramentas, alegação sem contexto
+
+**Caso Anônimo**:
+Caso de Projeto apresentado sem nome da organização, dados reais, valores, pessoas, capturas identificáveis ou combinações de detalhes que permitam reconhecer o cliente.
+_Avoid_: Anonimização apenas nominal, informação comercial inferível, dado interno reconstruível
+
+**Caso em Construção**:
+Caso de Projeto autoral que torna visíveis problema, decisões, progresso e aprendizados, distinguindo com clareza o que foi planejado, construído e validado.
+_Avoid_: Resultado futuro apresentado como comprovado, progresso sem evidência, promessa de impacto não medido
+
+**Desenvolvimento Assistido por IA**:
+Forma de construção em que agentes de IA produzem código sob direção humana, com a colaboração, responsabilidades, validação e limites de autoria descritos de maneira transparente.
+_Avoid_: Atribuir autoria manual ao código gerado, ocultar colaboração, confundir entrega do produto com domínio não demonstrado do código
