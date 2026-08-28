@@ -9,7 +9,9 @@ Projeto público que combina uma apresentação profissional com um guia interat
 
 ## Primeira entrega planejada
 
-O primeiro MVP será escrito em português do Brasil e terá uma trilha completa de **Redes para Suporte**, cobrindo fundamentos como dispositivos de rede, endereço IP, máscara, gateway, DNS e diagnóstico básico.
+O primeiro MVP será escrito em português do Brasil e terá uma **Formação Inicial de Suporte de TI** completa para o nível 1. Ela partirá do uso básico de computador e desenvolverá raciocínio diagnóstico, comunicação, hardware e periféricos, sistemas operacionais, redes, aplicações, contas, segurança, ferramentas de diagnóstico e escalonamento responsável.
+
+Redes permanece como um módulo importante, cobrindo dispositivos, endereço IP, máscara, gateway, DNS e diagnóstico básico, mas a formação não será limitada a esse assunto nem a produtos específicos de uma empresa.
 
 O conteúdo é público e genérico. Dados confidenciais, credenciais e procedimentos internos de empresas não fazem parte do projeto.
 
