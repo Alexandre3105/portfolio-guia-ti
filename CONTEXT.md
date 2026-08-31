@@ -128,6 +128,10 @@ _Avoid_: Nome como abertura, lista de ferramentas, título profissional inflado
 Síntese da atuação apresentada como “Soluções digitais para operações, dados e aprendizagem”, conectando as frentes do portfólio sem reduzi-las a um cargo.
 _Avoid_: Cargo inflado, lista de tecnologias, posicionamento genérico sem evidências
 
+**MANSK**:
+Marca visual autoral do portfólio, acompanhada pela assinatura profissional “Alexandre Blank Lopes” e sem representar uma empresa ou equipe distinta do autor.
+_Avoid_: Nome empresarial implícito, equipe inexistente, substituir a identificação profissional
+
 **Oferta Freelancer**:
 Proposta comercial organizada em duas frentes: soluções para operações por meio de ferramentas, automações, documentação e treinamento; e dados para decisões por meio de dashboards, estatística aplicada e protótipos analíticos.
 _Avoid_: Lista desconexa de tecnologias, promessa de solução crítica sem evidência
@@ -135,6 +139,22 @@ _Avoid_: Lista desconexa de tecnologias, promessa de solução crítica sem evid
 **Contato de Projeto**:
 Conversa comercial iniciada pelo CTA “Conte seu problema”, usada para compreender contexto e necessidade antes de definir solução, escopo, prazo ou preço; no MVP, é encaminhada ao WhatsApp sem persistência dos dados pelo site.
 _Avoid_: Orçamento automático sem descoberta, promessa antecipada, formulário longo, número pessoal publicado sem revisão
+
+**Entrada Orientada**:
+Entrada pública que apresenta a Jornada Profissional como rota principal e a Jornada de Aprendizagem como rota secundária, permitindo compreender e alternar os objetivos antes de qualquer contato ou cadastro.
+_Avoid_: Tela de escolha sem contexto, cadastro obrigatório na entrada, mistura de projetos com progresso do aluno
+
+**Jornada Profissional**:
+Rota pública que conecta posicionamento, Casos de Projeto, Trajetória e Contato de Projeto para visitantes interessados em contratação ou recrutamento.
+_Avoid_: Área do aluno, catálogo de tecnologias, currículo bruto
+
+**Jornada de Aprendizagem**:
+Rota que começa publicamente pela apresentação da formação e pela Prévia Pública e, após decisão do visitante, continua na Conta do Aluno e no Estado de Aprendizagem privado.
+_Avoid_: Login antes da prévia, progresso misturado ao portfólio, supervisão empresarial
+
+**Minha Jornada**:
+Área privada de retomada da Jornada de Aprendizagem que apresenta missão atual, estados das missões e competências, Nível de Apoio e a próxima ação do aluno.
+_Avoid_: Dashboard empresarial, abertura automática no meio da missão, porcentagem única de progresso
 
 **Caso de Projeto**:
 Evidência profissional estruturada por problema, participação, solução, resultado e limites de publicação, permitindo compreender o valor entregue sem expor informação confidencial.

@@ -7,6 +7,10 @@
 # Logs
 *.log
 
+# Local browser validation artifacts
+.playwright-cli/
+/output/playwright/
+
 # Operating system files
 .DS_Store
 Thumbs.db

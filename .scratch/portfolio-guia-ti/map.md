@@ -6,7 +6,7 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 
 ## Notes
 
-- O produto terá duas jornadas explícitas: **Conheça meu trabalho** e **Iniciar treinamento**.
+- O produto terá duas jornadas explícitas: **Jornada Profissional** e **Jornada de Aprendizagem**, com textos e navegação definidos em [Prototipar a navegação entre as duas jornadas](issues/11-prototipar-duas-jornadas.md).
 - O treinamento será público, em PT-BR, para iniciantes em suporte e tecnologia da informação.
 - O primeiro MVP será uma **Formação Inicial de Suporte de TI** completa para o nível 1; redes será um dos módulos.
 - O responsável pelo projeto fornecerá currículo, LinkedIn, experiências e conteúdo autoral revisado.
@@ -26,6 +26,7 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 - [Definir formato de lições, exercícios e feedback](issues/08-definir-formato-de-licoes-exercicios-e-feedback.md) — cada lição será uma Missão de Suporte curta e acessível, com investigação por caminhos seguros, ajuda progressiva, transferência e feedback acionável.
 - [Decidir progresso, identidade e dados do aluno](issues/09-decidir-progresso-identidade-e-dados.md) — a formação terá Conta do Aluno 18+, progresso multidimensional e dados mínimos sob controle do titular, com autenticação gerenciada sem custo previsto no MVP.
 - [Definir narrativa e conteúdo do portfólio](issues/10-definir-narrativa-do-portfolio.md) — o portfólio prioriza projetos freelancer, sustenta sua oferta com quatro casos delimitados e separa os caminhos de contato, formação e recrutamento.
+- [Prototipar a navegação entre as duas jornadas](issues/11-prototipar-duas-jornadas.md) — marca MANSK, entrada orientada com casos editoriais e formação própria; primeiro acesso e retomada passam por Minha jornada.
 
 ## Not yet specified
 
