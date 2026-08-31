@@ -27,6 +27,7 @@ Chegar a uma especificação completa e pronta para `to-spec` e `to-tickets` do 
 - [Decidir progresso, identidade e dados do aluno](issues/09-decidir-progresso-identidade-e-dados.md) — a formação terá Conta do Aluno 18+, progresso multidimensional e dados mínimos sob controle do titular, com autenticação gerenciada sem custo previsto no MVP.
 - [Definir narrativa e conteúdo do portfólio](issues/10-definir-narrativa-do-portfolio.md) — o portfólio prioriza projetos freelancer, sustenta sua oferta com quatro casos delimitados e separa os caminhos de contato, formação e recrutamento.
 - [Prototipar a navegação entre as duas jornadas](issues/11-prototipar-duas-jornadas.md) — marca MANSK, entrada orientada com casos editoriais e formação própria; primeiro acesso e retomada passam por Minha jornada.
+- [Prototipar uma Missão de Suporte interativa](issues/12-prototipar-licao-interativa.md) — formato progressivo e linguagem simples aprovados; indução pelas alternativas e aprendizagem real permanecem pontos de validação nos critérios de qualidade.
 
 ## Not yet specified
 
