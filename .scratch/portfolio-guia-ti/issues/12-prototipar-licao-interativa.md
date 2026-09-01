@@ -19,6 +19,7 @@ Que protótipo mínimo de uma Missão de Suporte permite avaliar com iniciantes 
 - Artefato histórico recuperável no commit `793720f`, em `.scratch/portfolio-guia-ti/prototypes/support-mission/`. Seu código descartável foi retirado da área ativa após a aprovação; a decisão e os limites ficam neste ticket, e o roteiro de piloto segue em **Definir qualidade, privacidade, métricas e critérios de aceite**.
 - Primeira checagem técnica: fluxo completo percorrido; verificados feedback, caminho alternativo de investigação, barreiras de autorização, dicas graduais, registro curto e nova tentativa. As três apresentações não apresentaram rolagem horizontal na verificação móvel.
 - **Aprovação do responsável:** considerou a experiência muito boa e a linguagem simples; observou que estava um pouco sugestiva, mas confirmou que gostou e autorizou avançar. A observação é um ponto para revisão editorial e piloto, não um pedido de refazer a interface agora.
+- **Refinamento posterior aprovado em conceito:** durante [Definir arquitetura curricular e governança de atualização](16-definir-arquitetura-curricular-e-governanca.md), o responsável aprovou a conversa roteirizada com perguntas escolhidas, testes simulados e descoberta gradual de evidências como formato principal da investigação. Explicações, exercícios e debriefing permanecem ao redor dela. Preservar a aprovação histórica do formato-base sem tratar a nova interação como já prototipada, comparativamente aprovada ou validada com iniciantes; seu detalhamento continua naquele ticket.
 
 ## Answer
 

@@ -49,6 +49,10 @@ O progresso não será reduzido a uma porcentagem única. O produto mostrará tr
 
 Uma **Missão Percorrida** não equivale a uma **Competência Demonstrada**. O aluno pode acessar a próxima missão depois de percorrer a anterior, mesmo que a competência ainda esteja em desenvolvimento. A **Conclusão da Formação**, porém, exige todas as competências obrigatórias e o desafio final demonstrados com segurança.
 
+Detalhamento posterior aprovado em [Definir arquitetura curricular e governança de atualização](16-definir-arquitetura-curricular-e-governanca.md): uma correção crítica que invalide a evidência de uma competência exige nova demonstração somente da parte afetada. Os registros anteriores e resultados válidos das demais partes são preservados, sem tratar uma evidência comprometida como prova atual válida. A competência afetada recebe a indicação **Revisão necessária**; quando já havia conclusão, a formação mostra **Concluída anteriormente — revisão pendente**. Uma nova demonstração válida elimina a pendência correspondente; ler o aviso não basta. Isso não amplia o armazenamento, a retenção ou o acesso administrativo previstos aqui.
+
+Mudanças curriculares sem correção crítica seguem a complementação aprovada no mesmo ticket: preservar resultados anteriores e aproveitar somente evidências ainda válidas para critérios equivalentes; exigir demonstração dos requisitos novos ou alterados para reconhecer a conclusão atualizada. Uma conclusão anterior continua identificada pelos requisitos atendidos e não comprova automaticamente as novas exigências. Isso não cria histórico completo de tentativas, amplia retenção ou permite acesso administrativo às respostas.
+
 ### Estado de Aprendizagem armazenado
 
 O MVP persistirá somente o necessário para retomada e evidência de evolução:

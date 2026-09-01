@@ -12,6 +12,38 @@ _Avoid_: Curso de redes, manual da empresa, treinamento de fabricante
 Sequência orientada de módulos e experiências de aprendizagem que conduz o iniciante até um conjunto observável de competências.
 _Avoid_: Lista de artigos, catálogo de assuntos
 
+**Módulo da Formação**:
+Agrupamento de Missões de Suporte orientado a uma área de atuação ou à integração de competências da formação.
+_Avoid_: Aula isolada, competência individual, treinamento de fabricante
+
+**Gestão de Conteúdo da Formação**:
+Organização e manutenção dos módulos, Missões de Suporte e materiais publicados da formação. É distinta do acompanhamento individual dos alunos e não inclui acesso às suas respostas.
+_Avoid_: Supervisão de alunos, gestão empresarial, consulta de respostas individuais
+
+**Ficha da Missão**:
+Definição editorial estruturada de uma Missão de Suporte, reunindo objetivo, competências, cenário, blocos, interações, avaliação, referências e informações de autoria e revisão.
+_Avoid_: Registro de Atendimento do aluno, transcrição de conversa, página de texto sem estrutura
+
+**Rascunho da Missão**:
+Conteúdo de uma Missão de Suporte em preparação ou revisão, ainda não liberado para os alunos.
+_Avoid_: Missão publicada, resposta do aluno, conteúdo validado apenas por ter sido gerado
+
+**Prévia Editorial**:
+Visualização de uma Missão de Suporte em preparação para revisão pelo responsável antes de sua publicação.
+_Avoid_: Prévia Pública, demonstração para visitantes, publicação automática
+
+**Versão da Missão**:
+Edição identificável do conteúdo e dos critérios de uma Missão de Suporte, que distingue o material utilizado pelo aluno em sua tentativa.
+_Avoid_: Tentativa do aluno, versão do aplicativo, progresso do aluno
+
+**Atualização Comum da Missão**:
+Ajuste editorial de texto, exemplos ou clareza que preserva os objetivos e critérios avaliados, sem envolver correção crítica de segurança ou erro grave de conteúdo.
+_Avoid_: Correção crítica, mudança de competência, nova tentativa do aluno
+
+**Correção Crítica da Missão**:
+Alteração necessária para corrigir uma orientação insegura ou um erro grave no conteúdo ou na avaliação de uma Missão de Suporte.
+_Avoid_: Ajuste de redação, punição ao aluno, atualização comum
+
 **Autonomia Progressiva**:
 Evolução da observação supervisionada até a resolução independente de ocorrências comuns, sempre dentro dos limites de segurança e responsabilidade do suporte.
 _Avoid_: Fazer qualquer coisa sozinho, acesso irrestrito
@@ -39,6 +71,18 @@ _Avoid_: Aula expositiva isolada, lista de conteúdo, quiz avulso
 **Caminho de Investigação**:
 Sequência de perguntas, hipóteses e testes seguros escolhida pelo aluno dentro de uma Missão de Suporte; caminhos diferentes podem ser válidos quando suas conclusões respeitam as evidências.
 _Avoid_: Gabarito linear, ordem única de cliques
+
+**Conversa Investigativa**:
+Interação roteirizada com um cliente fictício na qual o aluno escolhe perguntas e Testes Simulados para descobrir e interpretar evidências gradualmente.
+_Avoid_: Chat com cliente real, conversa gerada por IA durante a atividade, gabarito linear
+
+**Teste Simulado**:
+Verificação fictícia escolhida pelo aluno durante uma Missão de Suporte, com resultado definido pelo cenário e sem operar dispositivos, sistemas ou dados reais.
+_Avoid_: Teste em produção, comando executado na máquina do aluno, indicação automática de acerto
+
+**Conclusão da Investigação**:
+Síntese apresentada pelo aluno sobre as evidências, hipóteses e condução de um caso, cuja fundamentação ainda precisa ser verificada pelos critérios da missão.
+_Avoid_: Diagnóstico automaticamente confirmado, Competência Demonstrada, Conclusão da Formação
 
 **Debriefing da Missão**:
 Feedback final que reconstrói o Caminho de Investigação, reconhece decisões bem fundamentadas e indica evidências ignoradas, riscos assumidos e uma próxima melhoria concreta.
@@ -93,11 +137,19 @@ Estado que indica que o aluno passou pelos blocos e pelo debriefing de uma Miss�
 _Avoid_: Competência concluída, domínio comprovado
 
 **Competência Demonstrada**:
-Estado sustentado por um Caso de Transferência no qual o aluno atende aos critérios de segurança, evidência, condução e comunicação definidos para a competência.
+Estado sustentado por evidência válida de um Caso de Transferência no qual o aluno atende aos critérios de segurança, evidência, condução e comunicação definidos para a competência.
 _Avoid_: Página visitada, conteúdo percorrido, certificado definitivo
 
+**Revalidação da Competência**:
+Nova demonstração de uma competência cuja evidência anterior foi comprometida por uma Correção Crítica da Missão, distinta do resultado histórico já registrado.
+_Avoid_: Reiniciar toda a formação, apagar o resultado anterior, presumir validade por ler a correção
+
+**Revisão Necessária**:
+Indicação de que uma competência precisa de revalidação porque uma correção do material comprometeu sua evidência anterior, sem atribuir o problema ao aluno.
+_Avoid_: Reprovação do aluno, progresso apagado, competência atualmente válida
+
 **Conclusão da Formação**:
-Estado alcançado quando todas as competências obrigatórias e o desafio final da Formação Inicial de Suporte de TI foram demonstrados com segurança.
+Estado sustentado pela demonstração válida e segura de todas as competências obrigatórias e do desafio final da Formação Inicial de Suporte de TI. Distingue-se de uma conclusão anterior com revalidação pendente.
 _Avoid_: Todas as páginas visitadas, porcentagem completa sem evidência
 
 **Portabilidade da Jornada**:
