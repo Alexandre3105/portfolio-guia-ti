@@ -56,12 +56,12 @@ Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes ex
 
 **Blocked by:** Entregar a fundação executável da MANSK.
 
-- [ ] A raiz apresenta **“Tenho um problema ou projeto.”** e **“Quero aprender a resolver problemas de tecnologia.”** com contexto suficiente para diferenciá-las.
-- [ ] A marca visual é **MANSK**, acompanhada por **Alexandre Blank Lopes**, sem sugerir empresa ou equipe inexistente.
-- [ ] A navegação pública contém Projetos, Formação, Trajetória e Entrar e funciona com histórico e URLs compartilháveis.
-- [ ] Um usuário autenticado que visite a raiz continua vendo a Entrada Orientada e não é redirecionado automaticamente.
-- [ ] A experiência funciona por teclado, possui foco visível e não oculta a navegação em largura móvel.
-- [ ] Testes pelo navegador cobrem as duas escolhas em desktop e celular sem rolagem horizontal indevida.
+- [x] A raiz apresenta **“Tenho um problema ou projeto.”** e **“Quero aprender a resolver problemas de tecnologia.”** com contexto suficiente para diferenciá-las.
+- [x] A marca visual é **MANSK**, acompanhada por **Alexandre Blank Lopes**, sem sugerir empresa ou equipe inexistente.
+- [x] A navegação pública contém Projetos, Formação, Trajetória e Entrar e funciona com histórico e URLs compartilháveis.
+- [x] Um usuário autenticado que visite a raiz continua vendo a Entrada Orientada e não é redirecionado automaticamente.
+- [x] A experiência funciona por teclado, possui foco visível e não oculta a navegação em largura móvel.
+- [x] Testes pelo navegador cobrem as duas escolhas em desktop e celular sem rolagem horizontal indevida.
 
 ## 03 — Publicar a Jornada Profissional e o Contato de Projeto
 
