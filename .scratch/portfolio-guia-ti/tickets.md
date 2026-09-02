@@ -42,13 +42,13 @@ Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes ex
 
 **Blocked by:** None — can start immediately.
 
-- [ ] A aplicação Next.js com TypeScript abre uma página pública identificada como MANSK e possui uma rota de saúde sem dados pessoais.
-- [ ] Payload CMS e PostgreSQL iniciam com a aplicação em um ambiente Docker local documentado, sem expor o banco em porta pública na configuração equivalente à produção.
-- [ ] Segredos e configurações locais usam variáveis de ambiente e exemplos sem credenciais reais versionadas.
-- [ ] O projeto oferece comandos reproduzíveis para desenvolvimento, lint, tipos, testes e build.
-- [ ] O CI executa lint, tipos, testes automatizados iniciais e build, bloqueando uma mudança inválida.
-- [ ] Existe ao menos um teste pelo seam web principal que comprova a abertura da página e da rota de saúde.
-- [ ] O README reflete a fase de implementação, a stack escolhida e a ausência de licença pública, sem criar arquivo `LICENSE`.
+- [x] A aplicação Next.js com TypeScript abre uma página pública identificada como MANSK e possui uma rota de saúde sem dados pessoais.
+- [x] Payload CMS e PostgreSQL iniciam com a aplicação em um ambiente Docker local documentado, sem expor o banco em porta pública na configuração equivalente à produção.
+- [x] Segredos e configurações locais usam variáveis de ambiente e exemplos sem credenciais reais versionadas.
+- [x] O projeto oferece comandos reproduzíveis para desenvolvimento, lint, tipos, testes e build.
+- [x] O CI executa lint, tipos, testes automatizados iniciais e build, bloqueando uma mudança inválida.
+- [x] Existe ao menos um teste pelo seam web principal que comprova a abertura da página e da rota de saúde.
+- [x] O README reflete a fase de implementação, a stack escolhida e a ausência de licença pública, sem criar arquivo `LICENSE`.
 
 ## 02 — Entregar a Entrada Orientada e a navegação-base
 

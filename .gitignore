@@ -7,6 +7,24 @@
 # Logs
 *.log
 
+# Dependencies and generated application output
+node_modules/
+.pnpm-store/
+.next/
+out/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local CMS media
+media/
+
+# Test output
+test-results/
+playwright-report/
+blob-report/
+
 # Local browser validation artifacts
 .playwright-cli/
 /output/playwright/

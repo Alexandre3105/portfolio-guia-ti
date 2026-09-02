@@ -1,0 +1,44 @@
+import { postgresAdapter } from '@payloadcms/db-postgres'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import path from 'path'
+import { buildConfig } from 'payload'
+import { fileURLToPath } from 'url'
+import sharp from 'sharp'
+
+import { Users } from './collections/Users'
+import { Media } from './collections/Media'
+
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
+
+function requireEnvironmentVariable(name: 'DATABASE_URL' | 'PAYLOAD_SECRET') {
+  const value = process.env[name]
+
+  if (!value) {
+    throw new Error(`Variável de ambiente obrigatória ausente: ${name}`)
+  }
+
+  return value
+}
+
+export default buildConfig({
+  admin: {
+    user: Users.slug,
+    importMap: {
+      baseDir: path.resolve(dirname),
+    },
+  },
+  collections: [Users, Media],
+  editor: lexicalEditor(),
+  secret: requireEnvironmentVariable('PAYLOAD_SECRET'),
+  typescript: {
+    outputFile: path.resolve(dirname, 'payload-types.ts'),
+  },
+  db: postgresAdapter({
+    pool: {
+      connectionString: requireEnvironmentVariable('DATABASE_URL'),
+    },
+  }),
+  sharp,
+  plugins: [],
+})

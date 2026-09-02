@@ -1,0 +1,46 @@
+services:
+  app:
+    image: node:22.17.0-alpine
+    working_dir: /workspace
+    command: >-
+      sh -c "corepack enable &&
+      corepack prepare pnpm@11.19.0 --activate &&
+      pnpm install --frozen-lockfile --store-dir /pnpm-store &&
+      pnpm dev --hostname 0.0.0.0"
+    environment:
+      DATABASE_URL: postgres://mansk:mansk@postgres:5432/mansk
+      NEXT_TELEMETRY_DISABLED: "1"
+      PAYLOAD_SECRET: local-docker-only-not-for-production
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - .:/workspace
+      - app_next:/workspace/.next
+      - app_node_modules:/workspace/node_modules
+      - app_pnpm_store:/pnpm-store
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: mansk
+      POSTGRES_PASSWORD: mansk
+      POSTGRES_USER: mansk
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mansk -d mansk"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  app_next:
+  app_node_modules:
+  app_pnpm_store:
+  postgres_data:
