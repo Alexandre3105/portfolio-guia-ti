@@ -147,22 +147,23 @@ test.describe('Entrada Orientada', () => {
   test('percorre a ordem lógica por Tab com foco visível e ativa a escolha', async ({ page }) => {
     await page.goto('/')
 
+    const navigation = page.getByRole('navigation', { name: 'Navegação principal' })
     const focusOrder = [
       page.getByRole('link', { name: 'Pular para o conteúdo' }),
       page.getByRole('link', { name: 'MANSK — início' }),
-      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+      navigation.getByRole('link', {
         name: 'Projetos',
         exact: true,
       }),
-      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+      navigation.getByRole('link', {
         name: 'Formação',
         exact: true,
       }),
-      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+      navigation.getByRole('link', {
         name: 'Trajetória',
         exact: true,
       }),
-      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+      navigation.getByRole('link', {
         name: 'Entrar',
         exact: true,
       }),
