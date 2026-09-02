@@ -21,18 +21,18 @@ Pesquisa e preparação local não autorizam cadastro, compra, contratação, mu
 
 ## Mapa das plataformas externas
 
-| Plataforma | Papel no MANSK | Primeiro ticket | Dados ou acesso envolvidos | Checkpoint do responsável |
-| --- | --- | --- | --- | --- |
-| GitHub, GitHub Actions e GitHub Container Registry | Repositório público, CI e armazenamento da imagem imutável | 01 e 22 | Código, histórico, resultados de testes, imagem e metadados de build; segredos somente quando necessários | Entender o workflow, permissões do pacote, proteção dos segredos e custos/limites antes de publicar a primeira imagem |
-| WhatsApp | Destino do Contato de Projeto por link com mensagem preparada no navegador | 03 | Número público e texto que o próprio visitante decide enviar | Revisar o número e a mensagem; não contratar API nem persistir o contato no site |
-| LinkedIn | Link externo da Trajetória profissional | 03 | Apenas a URL pública revisada | Confirmar o perfil que será divulgado; não haverá integração por API |
-| Firebase Authentication | Cadastro, login, verificação e recuperação da Conta do Aluno | 05 | E-mail, identificador de autenticação e eventos técnicos de segurança | Entender projeto, franquia, mensagens de autenticação, exportação e configuração antes de criar credenciais de produção |
-| Resend | E-mails transacionais da aplicação | 10 | E-mail do destinatário e metadados mínimos de entrega | Entender verificação de domínio, limites, reputação, supressões e API key antes do primeiro envio real |
-| Provedor de domínio | Registro do domínio público da MANSK | 23 e 24 | Dados cadastrais do titular e delegação de DNS | Escolher o provedor e aprovar compra/renovação; nenhum registrador foi fixado ainda |
-| Hostinger VPS | Servidor candidato para aplicação, banco, painel e mídia pequena | 23 e 24 | Aplicação, conteúdo, Estado de Aprendizagem, registros mínimos e logs operacionais | Verificar a KVM 1 somente após a revalidação do orçamento; aprovar contratação e acesso antes do provisionamento |
-| Cloudflare | DNS, proxy e camada pública TLS | 24 | Zona DNS e metadados técnicos das requisições | Entender nameservers, modo Full (strict), certificado de origem e tokens antes de alterar DNS |
-| Backblaze B2 | Cópia externa dos backups cifrados | 24 | Objetos já cifrados e metadados mínimos de armazenamento | Entender bucket, chaves restritas, lifecycle, restauração e cobrança antes de criar o armazenamento |
-| UptimeRobot | Monitoramento externo da rota de saúde | 24 | URL pública, disponibilidade, latência e contato de alerta | Definir contato e limites do plano antes de ativar monitores reais |
+| Plataforma                                         | Papel no MANSK                                                             | Primeiro ticket | Dados ou acesso envolvidos                                                                                | Checkpoint do responsável                                                                                               |
+| -------------------------------------------------- | -------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| GitHub, GitHub Actions e GitHub Container Registry | Repositório público, CI e armazenamento da imagem imutável                 | 01 e 22         | Código, histórico, resultados de testes, imagem e metadados de build; segredos somente quando necessários | Entender o workflow, permissões do pacote, proteção dos segredos e custos/limites antes de publicar a primeira imagem   |
+| WhatsApp                                           | Destino do Contato de Projeto por link com mensagem preparada no navegador | 03              | Número público e texto que o próprio visitante decide enviar                                              | Revisar o número e a mensagem; não contratar API nem persistir o contato no site                                        |
+| LinkedIn                                           | Link externo da Trajetória profissional                                    | 03              | Apenas a URL pública revisada                                                                             | Confirmar o perfil que será divulgado; não haverá integração por API                                                    |
+| Firebase Authentication                            | Cadastro, login, verificação e recuperação da Conta do Aluno               | 05              | E-mail, identificador de autenticação e eventos técnicos de segurança                                     | Entender projeto, franquia, mensagens de autenticação, exportação e configuração antes de criar credenciais de produção |
+| Resend                                             | E-mails transacionais da aplicação                                         | 10              | E-mail do destinatário e metadados mínimos de entrega                                                     | Entender verificação de domínio, limites, reputação, supressões e API key antes do primeiro envio real                  |
+| Provedor de domínio                                | Registro do domínio público da MANSK                                       | 23 e 24         | Dados cadastrais do titular e delegação de DNS                                                            | Escolher o provedor e aprovar compra/renovação; nenhum registrador foi fixado ainda                                     |
+| Hostinger VPS                                      | Servidor candidato para aplicação, banco, painel e mídia pequena           | 23 e 24         | Aplicação, conteúdo, Estado de Aprendizagem, registros mínimos e logs operacionais                        | Verificar a KVM 1 somente após a revalidação do orçamento; aprovar contratação e acesso antes do provisionamento        |
+| Cloudflare                                         | DNS, proxy e camada pública TLS                                            | 24              | Zona DNS e metadados técnicos das requisições                                                             | Entender nameservers, modo Full (strict), certificado de origem e tokens antes de alterar DNS                           |
+| Backblaze B2                                       | Cópia externa dos backups cifrados                                         | 24              | Objetos já cifrados e metadados mínimos de armazenamento                                                  | Entender bucket, chaves restritas, lifecycle, restauração e cobrança antes de criar o armazenamento                     |
+| UptimeRobot                                        | Monitoramento externo da rota de saúde                                     | 24              | URL pública, disponibilidade, latência e contato de alerta                                                | Definir contato e limites do plano antes de ativar monitores reais                                                      |
 
 Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes executados pelo próprio projeto, não novas plataformas SaaS obrigatórias. Eles também serão explicados no ticket em que entrarem. Railway, Render, Vercel, Sanity, Clerk, Auth0, HostGator compartilhada, WhatsApp Business API, SMS e analytics opcionais não fazem parte da arquitetura aprovada do MVP.
 
@@ -73,7 +73,7 @@ Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes ex
 - [ ] A promessa, o posicionamento e as ofertas de operações e dados usam os textos e limites aprovados na especificação.
 - [ ] Os casos AcompanhaPET, dashboard comercial anônimo, implantação anônima em academia e portfolio-guia-ti apresentam problema, participação, solução, resultado e limites.
 - [ ] AcompanhaPET explicita NB Petshop, colaboração do irmão e Desenvolvimento Assistido por IA sem publicar valores, documentos, credenciais, nome pessoal da proprietária ou telas identificáveis.
-- [ ] Os casos relacionados a dashboard, academia, Alfa Soluções e seus produtos permanecem anônimos; machine learning aparece somente como conhecimento em desenvolvimento.
+- [ ] Os casos relacionados a dashboard, academia, organização contratante e seus produtos permanecem anônimos; machine learning aparece somente como conhecimento em desenvolvimento.
 - [ ] **Conte seu problema** permite revisar a mensagem no navegador e só então abre o WhatsApp, sem enviar ou persistir o texto no site.
 - [ ] Trajetória aponta para o LinkedIn e não oferece o currículo PDF bruto.
 - [ ] Testes cobrem navegação dos casos, sanitização do conteúdo configurado e ausência de requisição de persistência ao preparar o contato.
@@ -305,7 +305,7 @@ Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes ex
 
 - [ ] As missões ensinam a delimitar dispositivo, alimentação, conectividade, serviço e integração como camadas investigáveis.
 - [ ] O aluno pratica consultar e avaliar documentação externa sem tratar manual de fabricante como fundamento universal.
-- [ ] Control iD, Topdata, AlfaControl e outros produtos específicos não aparecem como treinamento operacional.
+- [ ] Fabricantes, empregadores, clientes e sistemas particulares não aparecem como treinamento operacional específico.
 - [ ] Ensino, prática e Caso de Transferência cobrem todos os objetivos publicados na matriz.
 - [ ] Cenários não acessam catracas, leitores, credenciais, dados ou ambientes reais.
 - [ ] Fontes, autoria, revisão humana e alternativas acessíveis estão registradas.

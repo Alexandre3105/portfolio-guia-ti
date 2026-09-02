@@ -34,6 +34,7 @@ jobs:
       DATABASE_URL: postgres://mansk:mansk@127.0.0.1:5432/mansk
       NEXT_TELEMETRY_DISABLED: 1
       PAYLOAD_SECRET: ci-only-not-for-production
+      SITE_URL: http://127.0.0.1:3000
 
     steps:
       - name: Checkout

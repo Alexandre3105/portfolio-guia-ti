@@ -9,10 +9,13 @@ services:
       pnpm dev --hostname 0.0.0.0"
     environment:
       DATABASE_URL: postgres://mansk:mansk@postgres:5432/mansk
-      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_TELEMETRY_DISABLED: '1'
       PAYLOAD_SECRET: local-docker-only-not-for-production
+      PORTFOLIO_RESTRICTED_TERMS: ${PORTFOLIO_RESTRICTED_TERMS:-}
+      SITE_URL: ${SITE_URL:-http://127.0.0.1:3000}
+      WHATSAPP_NUMBER: ${WHATSAPP_NUMBER:-}
     ports:
-      - "127.0.0.1:3000:3000"
+      - '127.0.0.1:3000:3000'
     volumes:
       - .:/workspace
       - app_next:/workspace/.next
@@ -29,11 +32,11 @@ services:
       POSTGRES_PASSWORD: mansk
       POSTGRES_USER: mansk
     ports:
-      - "127.0.0.1:5432:5432"
+      - '127.0.0.1:5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U mansk -d mansk"]
+      test: ['CMD-SHELL', 'pg_isready -U mansk -d mansk']
       interval: 5s
       timeout: 5s
       retries: 10

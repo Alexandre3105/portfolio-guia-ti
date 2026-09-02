@@ -171,7 +171,7 @@ O principal seam de aceitação será o comportamento externo do produto pela in
 - A promessa central, o posicionamento, os dois CTAs e os quatro Casos de Projeto seguirão os textos e a ordem definidos na Solution.
 - Cada Caso de Projeto explicita problema, participação, solução, resultado e limites de publicação.
 - AcompanhaPET pode citar NB Petshop, mas não valores, documentos, credenciais, telas identificáveis ou o nome pessoal da proprietária. A colaboração do irmão e o Desenvolvimento Assistido por IA devem ser explícitos.
-- O dashboard comercial, a implantação em academia e a experiência relacionada à Alfa Soluções e seus produtos permanecem anônimos no MVP.
+- O dashboard comercial, a implantação em academia, a organização contratante e seus produtos permanecem anônimos no MVP.
 - Resultados qualitativos não serão convertidos em causalidade ou métricas não comprovadas. Machine learning não será ofertado como caso comprovado.
 - O caso do portfolio-guia-ti distingue planejado, construído e validado.
 - O CTA Conte seu problema monta a mensagem no navegador e abre o WhatsApp. O site não armazena o conteúdo do contato. Número e texto final serão revisados na implementação.
@@ -313,7 +313,7 @@ O principal seam de aceitação será o comportamento externo do produto pela in
 
 - Tradução do MVP para inglês ou outros idiomas.
 - Conteúdo empresarial confidencial, credenciais, dados de clientes, capturas identificáveis ou procedimentos internos.
-- Treinamento específico de Control iD, Topdata, AlfaGym, AlfaControl ou qualquer fabricante e sistema particular.
+- Treinamento operacional específico de fabricantes, empregadores, clientes ou sistemas particulares.
 - Especializações avançadas além da Formação Inicial de Suporte de TI nível 1.
 - Área de empresa, painel de gestor, supervisão de funcionários ou acesso administrativo às respostas individuais.
 - Certificados, comunidade, ranking, gamificação competitiva, mensagens entre alunos ou recursos sociais.

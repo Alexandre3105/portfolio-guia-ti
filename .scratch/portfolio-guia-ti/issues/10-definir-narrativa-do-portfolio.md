@@ -29,10 +29,10 @@ Que história profissional o portfólio deve contar, quais evidências sustentam
 - Enquanto estiver em desenvolvimento, o caso deve separar claramente o que foi planejado, construído e validado, sem anunciar resultados de aprendizagem ainda não medidos.
 - Novas evidências candidatas informadas:
   - **AcompanhaPET**: software de gestão para pet shops já utilizado por cliente; precisa detalhar participação, problema atendido, estágio real do produto, evidências publicáveis e limites de identificação do cliente.
-  - **AlfaGym e AlfaControl**: experiência combinando desenvolvimento e implantação de sistemas para academias e controle de acesso, treinamento de usuários e entendimento das necessidades do cliente; precisa delimitar a participação individual, separar contribuição de equipe e confirmar quais nomes e resultados podem ser divulgados.
-- O trabalho para a Alfa Soluções ocorre por contratação PJ. Essa relação não será interpretada como autorização de divulgação; nomes, marcas, clientes e detalhes internos permanecem restritos até revisão contratual ou autorização explícita.
-- Regra aprovada para o MVP: a experiência com AlfaGym e AlfaControl será apresentada como um **Caso Anônimo** de sistemas de gestão e controle de acesso, sem nomes de produtos, empresa, clientes ou detalhes internos.
-- O [site público da Alfa Soluções](https://alfasolucoes.cloud/) confirma a existência e o posicionamento público dos produtos, mas não será usado como prova da participação individual do autor nem como autorização de uso das marcas.
+  - **Sistemas de gestão e controle de acesso**: experiência combinando desenvolvimento e implantação, treinamento de usuários e entendimento das necessidades do cliente; precisa delimitar a participação individual, separar contribuição de equipe e confirmar quais resultados podem ser divulgados.
+- O trabalho para a organização atendida ocorre por contratação PJ. Essa relação não será interpretada como autorização de divulgação; nomes, marcas, clientes e detalhes internos permanecem restritos até revisão contratual ou autorização explícita.
+- Regra aprovada para o MVP: a experiência com esses sistemas será apresentada como um **Caso Anônimo**, sem nomes de produtos, empresa, clientes ou detalhes internos.
+- A existência de site institucional público não será usada como prova da participação individual do autor nem como autorização de uso das marcas.
 - Direção narrativa recomendada: não apresentar os produtos apenas como uma lista. Cada caso deve comprovar uma competência distinta — análise de dados, construção de produto, ou desenvolvimento e implantação orientados à operação do cliente.
 - Ordem aprovada dos casos: **AcompanhaPET** como produto real em uso; **dashboard comercial anônimo** como evidência de dados e Power BI; **implantação anônima em academia** como evidência de entendimento do cliente, treinamento e autonomia operacional; e **portfolio-guia-ti** como produto educacional autoral em construção.
 - Caso operacional selecionado, mantido anônimo: implantação de um sistema de gestão em uma academia cliente. A participação declarada envolveu prestar suporte, observar e compreender o fluxo real da operação, conduzir a implantação conforme as necessidades identificadas e treinar a equipe usuária.
@@ -80,6 +80,6 @@ Os casos seguem o formato problema, participação, solução, resultado e limit
 
 - Não publicar clientes não autorizados, nomes pessoais desnecessários, dados reais, valores, documentos fiscais, credenciais, telas identificáveis ou detalhes empresariais internos.
 - AcompanhaPET pode citar a NB Petshop, mas a autorização do nome comercial não se estende automaticamente a valores, telas ou demais dados.
-- Alfa Soluções, AlfaGym, AlfaControl, a empresa do dashboard e a academia permanecerão anônimos no MVP.
+- A organização contratante, seus produtos, a empresa do dashboard e a academia permanecerão anônimos no MVP.
 - Não atribuir autoria manual individual ao código gerado por IA, omitir a colaboração do irmão ou transformar resultados qualitativos em métricas não comprovadas.
 - O número do WhatsApp e qualquer material do currículo serão revisados somente na implementação.

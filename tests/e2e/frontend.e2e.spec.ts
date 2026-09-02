@@ -78,7 +78,10 @@ test.describe('Entrada Orientada', () => {
     await page.getByRole('link', { name: /Tenho um problema ou projeto\./ }).click()
     await expect(page).toHaveURL('/portfolio')
     await expect(
-      page.getByRole('heading', { level: 1, name: 'Projetos que partem do problema real.' }),
+      page.getByRole('heading', {
+        level: 1,
+        name: 'Transformo problemas técnicos em soluções compreensíveis, seguras e documentadas, conectando suporte, implantação, ensino e desenvolvimento.',
+      }),
     ).toBeVisible()
 
     await page.goBack()

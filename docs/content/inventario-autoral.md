@@ -22,17 +22,17 @@ Dados de contato, endereço residencial, métricas privadas do LinkedIn e os PDF
 
 As atividades abaixo aparecem no currículo e/ou no perfil do LinkedIn. Elas podem orientar a narrativa, mas detalhes comerciais devem respeitar autorização do empregador e confidencialidade de clientes.
 
-### Invest Soluções Digitais - Especialista em suporte de TI
+### Contratação PJ - Especialista em suporte de TI
 
 **Período no LinkedIn:** abril de 2026 até o presente.
 
-- Suporte aos sistemas Inspell e à linha de sistemas Alfa.
+- Suporte a sistemas de gestão e controle de acesso.
 - Diagnóstico de problemas simples de infraestrutura de rede por terminal.
 - Participação em funções e automações para sistemas SaaS de academias e controle de acesso.
-- Planejamento de integração com API de terceiro, citando WellHub nas fontes.
+- Planejamento de integração com API de terceiro.
 - Uso de GitHub, Docker, Claude Code, Codex e fluxo de skills no processo de desenvolvimento.
 - Instalação, configuração, implantação e treinamento de sistemas para academias.
-- Participação declarada em implantação e treinamento de mais de 20 clientes no Espírito Santo.
+- Participação declarada em implantação e treinamento de clientes no Espírito Santo.
 
 **Limite de publicação:** não expor clientes, credenciais, arquitetura interna, código proprietário, incidentes, dados operacionais ou procedimentos de acesso. A quantidade de clientes e os nomes de produtos/integrações só devem entrar no site após confirmação de que podem ser divulgados.
 
@@ -65,12 +65,12 @@ Essas experiências são opcionais na primeira narrativa. Antes de usá-las, con
 
 As fontes divergem e não permitem publicar uma cronologia acadêmica segura sem confirmação:
 
-| Tema | Currículo | LinkedIn exportado / evidência pública | Tratamento |
-| --- | --- | --- | --- |
-| UVV | Ciência da Computação entre fev/2023 e dez/2024; Ciência de Dados desde fev/2025 | Bacharelado em Ciência da Computação entre fev/2023 e dez/2026; bio do GitHub declara Ciência de Dados na UVV | Confirmar curso atual, situação e datas antes de publicar |
-| UNIPDS | Engenharia de IA desde mai/2025 | Extensão em Engenharia de Software entre jun/2026 e jun/2027 | Confirmar nome oficial, modalidade e período |
-| Inglês | Não informado | Nível profissional de trabalho | Confirmar nível e se deve aparecer no site |
-| Cursos livres | Preparação de professores, Gemini/API Python, Python para Data Science, Oracle SQL Advanced e segurança de endpoint | Não detalhados no PDF do LinkedIn | Publicar apenas cursos com nome, emissor e datas revisados |
+| Tema          | Currículo                                                                                                           | LinkedIn exportado / evidência pública                                                                        | Tratamento                                                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| UVV           | Ciência da Computação entre fev/2023 e dez/2024; Ciência de Dados desde fev/2025                                    | Bacharelado em Ciência da Computação entre fev/2023 e dez/2026; bio do GitHub declara Ciência de Dados na UVV | Confirmar curso atual, situação e datas antes de publicar  |
+| UNIPDS        | Engenharia de IA desde mai/2025                                                                                     | Extensão em Engenharia de Software entre jun/2026 e jun/2027                                                  | Confirmar nome oficial, modalidade e período               |
+| Inglês        | Não informado                                                                                                       | Nível profissional de trabalho                                                                                | Confirmar nível e se deve aparecer no site                 |
+| Cursos livres | Preparação de professores, Gemini/API Python, Python para Data Science, Oracle SQL Advanced e segurança de endpoint | Não detalhados no PDF do LinkedIn                                                                             | Publicar apenas cursos com nome, emissor e datas revisados |
 
 A data “julho de 2024 a setembro de 2018” associada ao curso de vendas no currículo é inconsistente e deve ser descartada até correção.
 
@@ -98,15 +98,15 @@ Os níveis “intermediário” ou “avançado” do currículo são autoavalia
 
 O perfil possui 23 repositórios públicos na data da coleta. A maioria registra exercícios e entregas acadêmicas; eles mostram evolução, mas não devem ser apresentados como produtos de produção.
 
-| Repositório | Evidência utilizável | Limite |
-| --- | --- | --- |
-| [`portfolio-guia-ti`](https://github.com/Alexandre3105/portfolio-guia-ti) | Processo documentado com Wayfinder, pesquisas primárias e rastreamento local versionado | Ainda não contém implementação do site |
-| [`Projeto_integrado_BD`](https://github.com/Alexandre3105/Projeto_integrado_BD) | Projeto acadêmico em grupo com modelo conceitual, modelo lógico e script PostgreSQL | Destacar autoria coletiva e escopo acadêmico |
-| [`uvv_bd1_cc1mc`](https://github.com/Alexandre3105/uvv_bd1_cc1mc) | PSET acadêmico de versionamento, Markdown, projeto lógico, PostgreSQL e SQL | O próprio README classifica o nível como básico/intermediário |
-| [`pset1-python`](https://github.com/Alexandre3105/pset1-python) | Código Python e artefatos de exercício | Não possui README suficiente para funcionar como estudo de caso |
-| [`primeiroportifolioalexandre`](https://github.com/Alexandre3105/primeiroportifolioalexandre) | Primeiro portfólio em HTML/CSS com wireframe | Sem README e sem contexto de decisões |
-| [`algoritimo_notas_uvv`](https://github.com/Alexandre3105/algoritimo_notas_uvv) | Exercício simples em C para cálculo de médias | Evidência inicial, não projeto principal |
-| [`Aula-Sabado`](https://github.com/Alexandre3105/Aula-Sabado) | Estrutura React/Vite | O README permanece o padrão do Vite; não há caso de uso documentado |
+| Repositório                                                                                   | Evidência utilizável                                                                    | Limite                                                              |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [`portfolio-guia-ti`](https://github.com/Alexandre3105/portfolio-guia-ti)                     | Processo documentado com Wayfinder, pesquisas primárias e rastreamento local versionado | Ainda não contém implementação do site                              |
+| [`Projeto_integrado_BD`](https://github.com/Alexandre3105/Projeto_integrado_BD)               | Projeto acadêmico em grupo com modelo conceitual, modelo lógico e script PostgreSQL     | Destacar autoria coletiva e escopo acadêmico                        |
+| [`uvv_bd1_cc1mc`](https://github.com/Alexandre3105/uvv_bd1_cc1mc)                             | PSET acadêmico de versionamento, Markdown, projeto lógico, PostgreSQL e SQL             | O próprio README classifica o nível como básico/intermediário       |
+| [`pset1-python`](https://github.com/Alexandre3105/pset1-python)                               | Código Python e artefatos de exercício                                                  | Não possui README suficiente para funcionar como estudo de caso     |
+| [`primeiroportifolioalexandre`](https://github.com/Alexandre3105/primeiroportifolioalexandre) | Primeiro portfólio em HTML/CSS com wireframe                                            | Sem README e sem contexto de decisões                               |
+| [`algoritimo_notas_uvv`](https://github.com/Alexandre3105/algoritimo_notas_uvv)               | Exercício simples em C para cálculo de médias                                           | Evidência inicial, não projeto principal                            |
+| [`Aula-Sabado`](https://github.com/Alexandre3105/Aula-Sabado)                                 | Estrutura React/Vite                                                                    | O README permanece o padrão do Vite; não há caso de uso documentado |
 
 O repositório de perfil declara uso cotidiano de Python, Markdown, PostgreSQL, CentOS e Windows. Essas declarações podem orientar perguntas no ticket de narrativa, mas não substituem exemplos concretos.
 
@@ -122,12 +122,12 @@ Estes pilares são hipóteses para o ticket de narrativa, não decisões finais:
 
 ## Confirmações necessárias antes do texto público final
 
-- Nome público do empregador e relação entre **Invest Soluções Digitais**, **Alfa Soluções** e os produtos Alfa.
+- Nome público do empregador, relação entre as organizações atendidas e produtos internos.
 - Título atual a adotar: **Especialista em suporte de TI**, **Desenvolvedor Junior/Suporte de TI** ou outra forma oficial.
 - Curso atual na UVV, situação do bacharelado e datas corretas.
 - Nome, modalidade e datas da formação na UNIPDS.
 - Título e mês final corretos da experiência na Ctrl+Play.
-- Autorização para citar WellHub, Inspell, AlfaGym, AlfaMatriz e o número de clientes implantados/treinados.
+- Autorização para citar plataformas parceiras, produtos internos e o número de clientes implantados/treinados.
 - Nível de inglês e cursos/certificados que possuem comprovação publicável.
 - Quais atividades comunitárias devem compor a narrativa profissional.
 
