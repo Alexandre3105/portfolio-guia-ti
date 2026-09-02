@@ -69,14 +69,14 @@ Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes ex
 
 **Blocked by:** Entregar a Entrada Orientada e a navegação-base.
 
-- [ ] A página segue Entrada Orientada → Casos de Projeto → Como posso ajudar → Trajetória → Conte seu problema.
-- [ ] A promessa, o posicionamento e as ofertas de operações e dados usam os textos e limites aprovados na especificação.
-- [ ] Os casos AcompanhaPET, dashboard comercial anônimo, implantação anônima em academia e portfolio-guia-ti apresentam problema, participação, solução, resultado e limites.
-- [ ] AcompanhaPET explicita NB Petshop, colaboração do irmão e Desenvolvimento Assistido por IA sem publicar valores, documentos, credenciais, nome pessoal da proprietária ou telas identificáveis.
-- [ ] Os casos relacionados a dashboard, academia, organização contratante e seus produtos permanecem anônimos; machine learning aparece somente como conhecimento em desenvolvimento.
+- [x] A página segue Entrada Orientada → Casos de Projeto → Como posso ajudar → Trajetória → Conte seu problema.
+- [x] A promessa, o posicionamento e as ofertas de operações e dados usam os textos e limites aprovados na especificação.
+- [x] Os casos AcompanhaPET, dashboard comercial anônimo, implantação anônima em academia e portfolio-guia-ti apresentam problema, participação, solução, resultado e limites.
+- [x] AcompanhaPET explicita NB Petshop, colaboração do irmão e Desenvolvimento Assistido por IA sem publicar valores, documentos, credenciais, nome pessoal da proprietária ou telas identificáveis.
+- [x] Os casos relacionados a dashboard, academia, organização contratante e seus produtos permanecem anônimos; machine learning aparece somente como conhecimento em desenvolvimento.
 - [ ] **Conte seu problema** permite revisar a mensagem no navegador e só então abre o WhatsApp, sem enviar ou persistir o texto no site.
-- [ ] Trajetória aponta para o LinkedIn e não oferece o currículo PDF bruto.
-- [ ] Testes cobrem navegação dos casos, sanitização do conteúdo configurado e ausência de requisição de persistência ao preparar o contato.
+- [x] Trajetória aponta para o LinkedIn e não oferece o currículo PDF bruto.
+- [x] Testes cobrem navegação dos casos, sanitização do conteúdo configurado e ausência de requisição de persistência ao preparar o contato.
 
 ## 04 — Publicar a primeira Ficha da Missão do painel à Prévia Pública
 
