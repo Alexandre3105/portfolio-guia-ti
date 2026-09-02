@@ -13,7 +13,6 @@ services:
       PAYLOAD_SECRET: local-docker-only-not-for-production
       PORTFOLIO_RESTRICTED_TERMS: ${PORTFOLIO_RESTRICTED_TERMS:-}
       SITE_URL: ${SITE_URL:-http://127.0.0.1:3000}
-      WHATSAPP_NUMBER: ${WHATSAPP_NUMBER:-}
     ports:
       - '127.0.0.1:3000:3000'
     volumes:

@@ -74,7 +74,7 @@ Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes ex
 - [x] Os casos AcompanhaPET, dashboard comercial anônimo, implantação anônima em academia e portfolio-guia-ti apresentam problema, participação, solução, resultado e limites.
 - [x] AcompanhaPET explicita NB Petshop, colaboração do irmão e Desenvolvimento Assistido por IA sem publicar valores, documentos, credenciais, nome pessoal da proprietária ou telas identificáveis.
 - [x] Os casos relacionados a dashboard, academia, organização contratante e seus produtos permanecem anônimos; machine learning aparece somente como conhecimento em desenvolvimento.
-- [ ] **Conte seu problema** permite revisar a mensagem no navegador e só então abre o WhatsApp, sem enviar ou persistir o texto no site.
+- [x] **Conte seu problema** permite revisar a mensagem no navegador e só então abre o WhatsApp, sem enviar ou persistir o texto no site.
 - [x] Trajetória aponta para o LinkedIn e não oferece o currículo PDF bruto.
 - [x] Testes cobrem navegação dos casos, sanitização do conteúdo configurado e ausência de requisição de persistência ao preparar o contato.
 

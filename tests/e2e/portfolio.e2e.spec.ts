@@ -150,7 +150,12 @@ test.describe('Jornada Profissional', () => {
 
     const whatsappLink = review.getByRole('link', { name: 'Abrir conversa no WhatsApp' })
     const href = await whatsappLink.getAttribute('href')
-    expect(href).toMatch(/^https:\/\/wa\.me\/(?:\d+)?\?text=/)
+    const expectedWhatsappNumber = process.env.WHATSAPP_NUMBER?.replace(/\D/g, '')
+    expect(
+      expectedWhatsappNumber,
+      'o teste precisa de um destino de WhatsApp configurado',
+    ).toBeTruthy()
+    expect(href).toMatch(new RegExp(`^https://wa\\.me/${expectedWhatsappNumber}\\?text=`))
     expect(applicationWrites).toEqual([])
 
     await page.reload()
