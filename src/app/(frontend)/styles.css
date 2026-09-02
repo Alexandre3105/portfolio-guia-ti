@@ -145,7 +145,8 @@ h2 {
   margin-bottom: clamp(48px, 7vw, 84px);
 }
 
-.entry-heading > .eyebrow {
+.entry-heading > .eyebrow,
+.route-intro .eyebrow {
   grid-column: 1 / -1;
   margin-bottom: -16px;
 }
@@ -172,11 +173,6 @@ h2 {
   align-items: end;
   gap: 32px 64px;
   padding-bottom: clamp(54px, 8vw, 96px);
-}
-
-.route-intro .eyebrow {
-  grid-column: 1 / -1;
-  margin-bottom: -16px;
 }
 
 .route-intro h1 {
@@ -431,11 +427,8 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .entry-heading > .eyebrow,
   .route-intro .eyebrow {
-    margin-bottom: 0;
-  }
-
-  .entry-heading > .eyebrow {
     margin-bottom: 0;
   }
 

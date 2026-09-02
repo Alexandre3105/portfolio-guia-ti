@@ -1,4 +1,18 @@
-import { expect, test } from '@playwright/test'
+import { expect, type Page, test } from '@playwright/test'
+
+async function expectNoHorizontalOverflow(page: Page, path: string) {
+  await page.goto(path)
+
+  const viewport = await page.evaluate(() => ({
+    clientWidth: document.documentElement.clientWidth,
+    scrollWidth: document.documentElement.scrollWidth,
+  }))
+
+  expect(
+    viewport.scrollWidth,
+    `${path} não deve ultrapassar a largura ${viewport.clientWidth}px`,
+  ).toBe(viewport.clientWidth)
+}
 
 test.describe('Fundação pública da MANSK', () => {
   test('apresenta a identidade do produto', async ({ page }) => {
@@ -72,7 +86,10 @@ test.describe('Entrada Orientada', () => {
       page.getByRole('heading', { level: 1, name: 'O que você quer resolver hoje?' }),
     ).toBeVisible()
 
-    await page.goto('/formacao')
+    await page
+      .getByRole('link', { name: /Quero aprender a resolver problemas de tecnologia\./ })
+      .click()
+    await expect(page).toHaveURL('/formacao')
     await expect(
       page.getByRole('heading', { level: 1, name: 'Aprenda a investigar antes de concluir.' }),
     ).toBeVisible()
@@ -105,7 +122,7 @@ test.describe('Entrada Orientada', () => {
     ).toBeVisible()
   })
 
-  test('mantém as escolhas e toda a navegação acessíveis no celular', async ({ page }) => {
+  test('mantém as duas escolhas e toda a navegação disponíveis no celular', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 })
     await page.goto('/')
 
@@ -123,22 +140,53 @@ test.describe('Entrada Orientada', () => {
 
     await page.goBack()
     const professionalChoice = page.getByRole('link', { name: /Tenho um problema ou projeto\./ })
-    await professionalChoice.focus()
-    await expect(professionalChoice).toBeFocused()
-    await expect(professionalChoice).toHaveCSS('outline-style', 'solid')
-    await page.keyboard.press('Enter')
+    await professionalChoice.click()
     await expect(page).toHaveURL('/portfolio')
-
-    const hasHorizontalOverflow = await page.evaluate(
-      () => document.documentElement.scrollWidth > document.documentElement.clientWidth,
-    )
-    expect(hasHorizontalOverflow).toBe(false)
-
-    await page.setViewportSize({ width: 320, height: 700 })
-    await page.goto('/')
-    const hasOverflowAtMinimumWidth = await page.evaluate(
-      () => document.documentElement.scrollWidth > document.documentElement.clientWidth,
-    )
-    expect(hasOverflowAtMinimumWidth).toBe(false)
   })
+
+  test('percorre a ordem lógica por Tab com foco visível e ativa a escolha', async ({ page }) => {
+    await page.goto('/')
+
+    const focusOrder = [
+      page.getByRole('link', { name: 'Pular para o conteúdo' }),
+      page.getByRole('link', { name: 'MANSK — início' }),
+      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+        name: 'Projetos',
+        exact: true,
+      }),
+      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+        name: 'Formação',
+        exact: true,
+      }),
+      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+        name: 'Trajetória',
+        exact: true,
+      }),
+      page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', {
+        name: 'Entrar',
+        exact: true,
+      }),
+      page.getByRole('link', { name: /Tenho um problema ou projeto\./ }),
+      page.getByRole('link', { name: /Quero aprender a resolver problemas de tecnologia\./ }),
+    ]
+
+    for (const link of focusOrder) {
+      await page.keyboard.press('Tab')
+      await expect(link).toBeFocused()
+      await expect(link).toHaveCSS('outline-style', 'solid')
+    }
+
+    await page.keyboard.press('Enter')
+    await expect(page).toHaveURL('/formacao')
+  })
+
+  for (const width of [320, 390, 640, 768, 1280]) {
+    test(`não cria rolagem horizontal nas rotas públicas em ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 844 })
+
+      for (const path of ['/', '/portfolio', '/formacao', '/entrar']) {
+        await expectNoHorizontalOverflow(page, path)
+      }
+    })
+  }
 })

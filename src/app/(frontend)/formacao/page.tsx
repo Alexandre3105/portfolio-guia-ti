@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function FormationPage() {
   return (
-    <article className="route-page route-page--learning">
+    <article className="route-page">
       <header className="route-intro">
         <p className="eyebrow">Jornada de aprendizagem</p>
         <h1>Aprenda a investigar antes de concluir.</h1>
@@ -24,7 +24,7 @@ export default function FormationPage() {
         </p>
         <p>
           Situações curtas, evidências reveladas aos poucos e feedback técnico, objetivo e amigável.
-          A primeira prévia interativa será publicada em uma entrega própria.
+          A primeira Prévia Pública será publicada em uma entrega própria.
         </p>
       </div>
 

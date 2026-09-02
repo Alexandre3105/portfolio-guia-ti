@@ -16,7 +16,7 @@ export default function HomePage() {
       </div>
 
       <div className="journey-grid">
-        <Link className="journey-card journey-card--primary" href="/portfolio">
+        <Link className="journey-card" href="/portfolio">
           <span className="journey-number" aria-hidden="true">
             01
           </span>
