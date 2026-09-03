@@ -6,7 +6,8 @@ Issues, PRDs e mapas deste repositório vivem como arquivos Markdown versionados
 
 - Um esforço por diretório: `.scratch/<feature-slug>/`.
 - PRD: `.scratch/<feature-slug>/PRD.md`.
-- Tickets: `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numerados a partir de `01`.
+- Tickets de decisão Wayfinder: `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numerados a partir de `01`.
+- Backlog de implementação gerado por `to-tickets`: `.scratch/<feature-slug>/tickets.md`, com um título `##` e uma caixa de seleção para cada ticket numerado.
 - Comentários e histórico complementar são acrescentados sob `## Comments`.
 
 ## Quando uma skill disser "publicar no issue tracker"
@@ -16,6 +17,15 @@ Crie um arquivo no diretório do esforço em `.scratch/`, sem chamar `gh issue c
 ## Quando uma skill disser "buscar o ticket relevante"
 
 Leia o arquivo indicado pelo caminho ou pelo número local do ticket.
+
+## Tickets de implementação
+
+Depois que o Wayfinder e a especificação estiverem concluídos, `to-tickets` pode consolidar o backlog executável em `.scratch/<feature>/tickets.md`. Nesse arquivo:
+
+- cada título `## NN — ...` representa uma unidade de trabalho;
+- dependências e critérios de aceite permanecem dentro da seção do ticket;
+- a conclusão é registrada marcando as caixas correspondentes;
+- a numeração desse backlog é independente e pode coincidir com a dos tickets de decisão Wayfinder, pois os documentos representam fases diferentes.
 
 ## Tickets Wayfinder
 

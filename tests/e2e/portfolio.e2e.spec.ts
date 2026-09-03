@@ -111,14 +111,20 @@ test.describe('Jornada Profissional', () => {
     await expect(trajectory.locator('a[href$=".pdf"]')).toHaveCount(0)
   })
 
-  test('organiza a mensagem no navegador e oferece revisão antes do WhatsApp', async ({ page }) => {
+  test('organiza a mensagem no navegador e oferece revisão antes do WhatsApp', async ({
+    baseURL,
+    page,
+  }) => {
+    if (!baseURL) throw new Error('baseURL ausente no teste do contato')
+
     await page.goto('/portfolio#contato')
 
+    const applicationOrigin = new URL(baseURL).origin
     const applicationWrites: string[] = []
     page.on('request', (request) => {
       if (
         ['fetch', 'xhr'].includes(request.resourceType()) &&
-        new URL(request.url()).origin === 'http://127.0.0.1:3000'
+        new URL(request.url()).origin === applicationOrigin
       ) {
         applicationWrites.push(`${request.method()} ${request.url()}`)
       }

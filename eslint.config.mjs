@@ -26,6 +26,7 @@ export default defineConfig([
   },
   globalIgnores([
     '.next/**',
+    '.next-playwright/**',
     '.pnpm-store/**',
     'tmp-ticket01-scaffold/**',
     'src/payload-types.ts',

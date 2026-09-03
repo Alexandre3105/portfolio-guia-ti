@@ -1,12 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import { MissionExperience } from '@/components/mission-experience'
+import { getLatestPublishedMission } from '@/lib/missions'
+
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Formação | MANSK',
   description: 'Formação investigativa para aprender a resolver problemas de tecnologia.',
 }
 
-export default function FormationPage() {
+export default async function FormationPage() {
+  const mission = await getLatestPublishedMission()
+
   return (
     <article className="route-page">
       <header className="route-intro">
@@ -18,19 +25,34 @@ export default function FormationPage() {
         </p>
       </header>
 
-      <div className="route-callout">
-        <p className="section-index" aria-hidden="true">
-          MÉTODO
-        </p>
-        <p>
-          Situações curtas, evidências reveladas aos poucos e feedback técnico, objetivo e amigável.
-          A primeira Prévia Pública será publicada em uma entrega própria.
-        </p>
-      </div>
+      {mission ? (
+        <>
+          <div className="formation-note">
+            <p className="section-index">PRÉVIA PÚBLICA</p>
+            <p>
+              Experimente uma parte da formação. Não precisa entrar: sua escolha fica somente nesta
+              tela e não é salva.
+            </p>
+          </div>
+          <MissionExperience mission={mission} />
+        </>
+      ) : (
+        <div className="route-callout">
+          <p className="section-index" aria-hidden="true">
+            EM REVISÃO
+          </p>
+          <p>
+            A primeira missão está na Prévia Editorial. Ela só aparecerá aqui depois da revisão e
+            confirmação humana.
+          </p>
+        </div>
+      )}
 
-      <Link className="text-link" href="/">
-        ← Voltar à entrada
-      </Link>
+      <div className="formation-return">
+        <Link className="text-link" href="/">
+          ← Voltar à entrada
+        </Link>
+      </div>
     </article>
   )
 }

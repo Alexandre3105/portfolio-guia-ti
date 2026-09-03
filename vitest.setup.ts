@@ -1,3 +1,3 @@
-import { config as loadEnv } from 'dotenv'
+import { loadTestEnvironment } from './tests/support/test-environment'
 
-loadEnv({ path: 'test.env' })
+loadTestEnvironment()

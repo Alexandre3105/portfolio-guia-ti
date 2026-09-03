@@ -69,6 +69,7 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    missions: Mission;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -78,6 +79,7 @@ export interface Config {
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    missions: MissionsSelect<false> | MissionsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -163,6 +165,131 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "missions".
+ */
+export interface Mission {
+  id: number;
+  title: string;
+  slug: string;
+  module:
+    | 'Atender e investigar'
+    | 'Computadores e periféricos'
+    | 'Sistemas operacionais e ferramentas'
+    | 'Redes e conectividade'
+    | 'Sistemas web, contas e integrações'
+    | 'Segurança, privacidade e recuperação'
+    | 'Dispositivos conectados'
+    | 'Desafio final de atendimento';
+  summary: string;
+  objective: string;
+  /**
+   * Ao alterar conteúdo já publicado, salve um novo rascunho com outra versão e refaça as revisões.
+   */
+  versionLabel: string;
+  publishedVersionHistory?:
+    | {
+        versionLabel: string;
+        id?: string | null;
+      }[]
+    | null;
+  competencies?:
+    | {
+        key: string;
+        label: string;
+        id?: string | null;
+      }[]
+    | null;
+  scenario: {
+    openingMessage: string;
+    context: string;
+    safetyBoundary: string;
+  };
+  blocks?:
+    | {
+        key: string;
+        kind:
+          | 'essential-concept'
+          | 'microchallenge'
+          | 'demonstrated-case'
+          | 'guided-investigation'
+          | 'transfer-case'
+          | 'service-record'
+          | 'debriefing';
+        title: string;
+        body: string;
+        id?: string | null;
+      }[]
+    | null;
+  interactions?:
+    | {
+        key: string;
+        blockKey: string;
+        kind: 'microchallenge' | 'client-question' | 'simulated-test';
+        prompt: string;
+        options?:
+          | {
+              key: string;
+              label: string;
+              outcome: string;
+              feedback: string;
+              isRecommended?: boolean | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  verification?: {
+    requiredInteractions?:
+      | {
+          key: string;
+          id?: string | null;
+        }[]
+      | null;
+    closingCriteria?:
+      | {
+          description: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  debriefing: {
+    summary: string;
+    nextStep: string;
+    optionalDeepening?: string | null;
+  };
+  sources?:
+    | {
+        title: string;
+        publisher: string;
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
+  authorship: {
+    authorName: string;
+    contribution: string;
+    assistedByAI?: boolean | null;
+  };
+  /**
+   * Marque somente depois de revisar a Prévia Editorial. A validação automática não substitui essa confirmação.
+   */
+  review?: {
+    technical?: boolean | null;
+    pedagogical?: boolean | null;
+    authorship?: boolean | null;
+    safety?: boolean | null;
+    sanitization?: boolean | null;
+    confirmed?: boolean | null;
+    reviewedAt?: string | null;
+  };
+  publishedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -192,6 +319,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'media';
         value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'missions';
+        value: number | Mission;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -274,6 +405,119 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "missions_select".
+ */
+export interface MissionsSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  module?: T;
+  summary?: T;
+  objective?: T;
+  versionLabel?: T;
+  publishedVersionHistory?:
+    | T
+    | {
+        versionLabel?: T;
+        id?: T;
+      };
+  competencies?:
+    | T
+    | {
+        key?: T;
+        label?: T;
+        id?: T;
+      };
+  scenario?:
+    | T
+    | {
+        openingMessage?: T;
+        context?: T;
+        safetyBoundary?: T;
+      };
+  blocks?:
+    | T
+    | {
+        key?: T;
+        kind?: T;
+        title?: T;
+        body?: T;
+        id?: T;
+      };
+  interactions?:
+    | T
+    | {
+        key?: T;
+        blockKey?: T;
+        kind?: T;
+        prompt?: T;
+        options?:
+          | T
+          | {
+              key?: T;
+              label?: T;
+              outcome?: T;
+              feedback?: T;
+              isRecommended?: T;
+              id?: T;
+            };
+        id?: T;
+      };
+  verification?:
+    | T
+    | {
+        requiredInteractions?:
+          | T
+          | {
+              key?: T;
+              id?: T;
+            };
+        closingCriteria?:
+          | T
+          | {
+              description?: T;
+              id?: T;
+            };
+      };
+  debriefing?:
+    | T
+    | {
+        summary?: T;
+        nextStep?: T;
+        optionalDeepening?: T;
+      };
+  sources?:
+    | T
+    | {
+        title?: T;
+        publisher?: T;
+        url?: T;
+        id?: T;
+      };
+  authorship?:
+    | T
+    | {
+        authorName?: T;
+        contribution?: T;
+        assistedByAI?: T;
+      };
+  review?:
+    | T
+    | {
+        technical?: T;
+        pedagogical?: T;
+        authorship?: T;
+        safety?: T;
+        sanitization?: T;
+        confirmed?: T;
+        reviewedAt?: T;
+      };
+  publishedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

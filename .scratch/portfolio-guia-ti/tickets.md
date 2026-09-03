@@ -84,14 +84,14 @@ Next.js, TypeScript, Payload CMS, PostgreSQL, Docker e Caddy são componentes ex
 
 **Blocked by:** Entregar a fundação executável da MANSK; Entregar a Entrada Orientada e a navegação-base.
 
-- [ ] A autenticação administrativa do Payload é separada da futura Conta do Aluno.
-- [ ] A Ficha da Missão representa identificação, objetivo, competências, cenário, blocos, interações, verificação, fontes, autoria, revisão e versão.
-- [ ] Rascunhos incompletos podem ser salvos sem ficarem públicos.
-- [ ] A validação impede publicação com campo obrigatório ausente, referência inválida, interação sem retorno, encerramento sem critério ou falta de confirmação humana.
-- [ ] A Prévia Editorial permite revisar a experiência antes da publicação, sem ser confundida com a Prévia Pública.
-- [ ] Uma versão publicada aparece na apresentação pública da formação e alimenta um Microdesafio demonstrativo sem identidade ou progresso persistido.
-- [ ] O painel não oferece acesso a respostas ou Registros de Atendimento de alunos.
-- [ ] Testes cobrem rascunho, bloqueios de publicação, confirmação humana, publicação e consumo público da mesma versão.
+- [x] A autenticação administrativa do Payload é separada da futura Conta do Aluno.
+- [x] A Ficha da Missão representa identificação, objetivo, competências, cenário, blocos, interações, verificação, fontes, autoria, revisão e versão.
+- [x] Rascunhos incompletos podem ser salvos sem ficarem públicos.
+- [x] A validação impede publicação com campo obrigatório ausente, referência inválida, interação sem retorno, encerramento sem critério ou falta de confirmação humana.
+- [x] A Prévia Editorial permite revisar a experiência antes da publicação, sem ser confundida com a Prévia Pública.
+- [x] Uma versão publicada aparece na apresentação pública da formação e alimenta um Microdesafio demonstrativo sem identidade ou progresso persistido.
+- [x] O painel não oferece acesso a respostas ou Registros de Atendimento de alunos.
+- [x] Testes cobrem rascunho, bloqueios de publicação, confirmação humana, publicação e consumo público da mesma versão.
 
 ## 05 — Criar a Conta do Aluno e o primeiro acesso
 

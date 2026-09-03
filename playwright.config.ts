@@ -1,17 +1,33 @@
 import { defineConfig, devices } from '@playwright/test'
-import { config as loadEnv } from 'dotenv'
 
-loadEnv({ path: '.env.local' })
-loadEnv({ path: 'test.env' })
+import { loadTestEnvironment } from './tests/support/test-environment'
+
+loadTestEnvironment()
+
+const testServerHost = '127.0.0.1'
+const testServerPort = '3100'
+const testServerShutdownPath = '/__e2e_shutdown__'
+const testServerURL = `http://${testServerHost}:${testServerPort}`
+
+process.env.E2E_SERVER_HOST = testServerHost
+process.env.E2E_SERVER_PORT = testServerPort
+process.env.E2E_SHUTDOWN_PATH = testServerShutdownPath
+process.env.NEXT_DIST_DIR = '.next-playwright'
+process.env.SITE_URL = testServerURL
 
 export default defineConfig({
+  expect: {
+    timeout: 10_000,
+  },
+  globalTeardown: './tests/e2e/global-teardown.ts',
   testDir: './tests/e2e',
+  timeout: 60_000,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  workers: 1,
   reporter: process.env.CI ? 'github' : 'list',
   use: {
-    baseURL: 'http://127.0.0.1:3000',
+    baseURL: testServerURL,
     trace: 'on-first-retry',
   },
   projects: [
@@ -21,9 +37,9 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'pnpm dev',
-    reuseExistingServer: !process.env.CI,
+    command: 'node scripts/start-e2e-server.mjs',
+    reuseExistingServer: false,
     timeout: 120_000,
-    url: 'http://127.0.0.1:3000',
+    url: testServerURL,
   },
 })

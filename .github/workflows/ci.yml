@@ -18,20 +18,20 @@ jobs:
       postgres:
         image: postgres:17-alpine
         env:
-          POSTGRES_DB: mansk
+          POSTGRES_DB: mansk_test
           POSTGRES_PASSWORD: mansk
           POSTGRES_USER: mansk
         ports:
           - 5432:5432
         options: >-
-          --health-cmd "pg_isready -U mansk -d mansk"
+          --health-cmd "pg_isready -U mansk -d mansk_test"
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
 
     env:
       CI: true
-      DATABASE_URL: postgres://mansk:mansk@127.0.0.1:5432/mansk
+      DATABASE_URL: postgres://mansk:mansk@127.0.0.1:5432/mansk_test
       NEXT_TELEMETRY_DISABLED: 1
       PAYLOAD_SECRET: ci-only-not-for-production
       SITE_URL: http://127.0.0.1:3000

@@ -6,7 +6,7 @@ Este repositório está na fase de implementação do MVP. O planejamento aprova
 
 ## Fundação técnica
 
-O Ticket 01 introduz somente a base executável:
+A base executável usa:
 
 - **Next.js + TypeScript:** interface pública e rotas HTTP;
 - **Payload CMS:** painel editorial em `/admin`, separado da futura conta do aluno;
@@ -46,6 +46,18 @@ pnpm docker:up
 
 O Compose usa credenciais descartáveis apenas para desenvolvimento. Em produção, banco e segredos serão privados e injetados pelo ambiente de implantação.
 
+## Painel editorial e primeira missão
+
+O painel em `/admin` possui a coleção **Fichas da Missão**. Ela permite salvar rascunhos incompletos, revisar a experiência em uma Prévia Editorial e publicar somente depois das confirmações técnica, pedagógica, autoral, de segurança e de sanitização.
+
+Para criar o rascunho inicial em um banco local vazio:
+
+```powershell
+pnpm seed:first-mission
+```
+
+O comando é idempotente: se a ficha já existir, não sobrescreve edições feitas no painel. A publicação continua sendo uma ação humana no Payload. A versão publicada alimenta o Microdesafio em `/formacao`; escolhas do visitante não são persistidas.
+
 ## Comandos de qualidade
 
 | Comando | Finalidade |
@@ -56,8 +68,12 @@ O Compose usa credenciais descartáveis apenas para desenvolvimento. Em produç�
 | `pnpm test:e2e` | Abre a aplicação em Chromium e testa página e health check. |
 | `pnpm test` | Executa integração e navegador em sequência. |
 | `pnpm build` | Gera o build de produção do Next.js. |
+| `pnpm seed:first-mission` | Cria o primeiro rascunho editorial sem publicá-lo ou sobrescrever conteúdo existente. |
+| `pnpm db:up` | Inicia o PostgreSQL e garante o banco isolado `mansk_test` sem apagar o volume existente. |
 | `pnpm db:down` | Para o PostgreSQL local sem apagar o volume. |
 | `pnpm docker:down` | Para a aplicação e o banco sem apagar dados. |
+
+As suítes usam o banco local isolado `mansk_test`, criado de forma idempotente por `pnpm db:up` inclusive em volumes existentes. O Playwright inicia seu próprio servidor na porta `3100`. Assim, testes não publicam fichas nem criam administradores no banco usado pela prévia em `3000`.
 
 ## Variáveis de ambiente
 
